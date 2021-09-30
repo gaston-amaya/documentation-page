@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - documentation page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>HTML Documentation</header>
+  
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <a class="nav-link" href="#HTML_Editors">HTML Editors</a>
+  <a class="nav-link" href="#HTML_Basic_Examples">HTML Basic Examples</a>
+  <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+  <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+  <a class="nav-link" href="#Reference">Reference</a>
+      
+      </nav>
+  <main id="main-doc">
+  <section id="Introduction" class="main-section">
+  <header>Introduction</header>
+  <article>
+    <p>
+      HTML is the standard markup language for creating Web pages.
+    </p>
+    </article>
+    <header>What is HTML?</header>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+        </li>
+       </ul>
+      </article>
+    </section>
+    
+    <section id="HTML_Editors" class="main-section">
+      <header>HTML Editors</header>
+        <article>
+        <p>A simple text editor is all you need to learn HTML.
+          </p>
+     
+      <header>Learn HTML Using Notepad or TextEdit</header>
+      
+      <p>Web pages can be created and modified by using professional HTML editors.</p>
+
+<p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).</p>
+
+<p>We believe in that using a simple text editor is a good way to learn HTML.</p>
+
+
+          Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+      <h2>Step 1: Open Notepad (PC)</h2>
+      
+      <p><b>Windows 8 or later:</b></p>
+      
+      <p>Open the <b>Start screen</b>(the window symbol at the bottom left on your screen). Type <b>Notepad</b></p>
+      
+      <p><b>Windows 7 or later:</b></p>
+      <p>Open <b>Start > Programs > Accessories > Notepad.</b></p>
+      
+      <h2>Step 1: Open TextEdit (Mac)</h2>
+  
+        <p>Open <b>Finder > Applications > TextEdit</b></p>
+      <p>Also change some preferences to get the application to save files correctly. </p>
+      <p>In <b>Preferences > Format ></b> choose <b>"Plain Text"</b>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".
+      </p><p>
+      <b>Then open a new document to place the code.</b></p>
+      
+      
+      <h2>Step 2: Write Some HTML</h2>
+      <p>Write or copy the following HTML code into Notepad:</p>
+      <p><div><pre><code><span>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;</span>My First Heading<span>&lt;/h1&gt;</span>
+<span>&lt;p&gt;</span>My first paragraph<span>&lt;/p&gt;</span>
+
+<span>&lt;/body&gt;
+&lt;/html&gt;</span>
+        </code></pre></p></div>
+      <h2>Step 3: Save the HTML Page</h2>
+      <p>Save the file on your computer. <b>Select File > Save as</b> in the Notepad menu.</p>
+      <p>Name the file <b>"index.htm"</b> and set the encoding to <b>UTF-8</b> (which is the preferred encoding for HTML files).</p>
+      
+      <h2>Step 4: View the HTML Page in Your Browser</h2>
+      <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+      
+      </article>
+  </section>
+
+<section id="HTML_Basic_Examples" class="main-section">
+  <header>HTML Basic Examples</header>
+   <p>In this chapter we will show some basic HTML examples.</p>
+      <p>Don't worry if we use tags you have not learned about yet.</p>
+    <article>
+      
+      <header>HTML Documents</header>
+     
+      
+      <p>All HTML documents must start with a document type declaration:<span><code> &lt;!DOCTYPE html&gt;</span></code></p>
+      
+ <p>The HTML document itself begins with<code><span> &lt;html&gt;</span></code> and ends with <code><span>&lt;/html&gt;</span></code></p>
+      <p>The visible part of the HTML document is between <code><span> &lt;body&gt;</span></code> and <code><span> &lt;/body&gt;</span></code></p>
+      
+     <h2>Example</h2>
+      <p><div><pre><code class="examplecode"><span>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;</span>My First Heading<span>&lt;/h1&gt;</span>
+<span>&lt;p&gt;</span>My first paragraph<span>&lt;/p&gt;</span>
+
+<span>&lt;/body&gt;
+&lt;/html&gt;</span>
+        </pre></code></p>
+</div>      
+      <header>HTML Headings</header>
+      
+  <p>HTML headings are defined with the tags<code><span>&lt;h1&gt; </span></code>to <code><span>&lt;h6&gt;</span></code></p>
+        
+<p><pre><code><span>&lt;h1&gt;</span> defines the most important heading. <span>&lt;h6&gt;</span> defines the least important heading</pre></code></p> 
+
+<h2>Example</h2>
+<div><pre><p><code class="examplecode"><span>&lt;h1&gt;</span>This is heading 1<span>&lt;/h1&gt;</span>
+
+ <span> &lt;h2&gt;</span>This is heading 2<span>&lt;/h2&gt;</span>
+  
+ <span> &lt;h3&gt;</span>This is heading 3<span>&lt;/h3&gt;</span>
+  
+</code></pre></p>
+</div>
+<header>HTML Paragraphs</header>
+
+<p>HTML paragraphs are defined with the<code><span> &lt;p&gt;</span></code> tag</p>
+
+<h2>Example</h2>
+
+<div class="div2"><pre><p><code class="examplecode"><span>&lt;p&gt;</span>This is a paragraph.<span>&lt;/p&gt;</span>
+<span>&lt;p&gt;</span>This is another paragraph.<span>&lt;/p&gt;</span></code></pre></p></div>
+
+<header>HTML Links</header>
+
+<p>HTML links are defined with the<code><span> &lt;a&gt;</span></code> tag 
+  
+<h2>Example</h2>
+
+<div class="div4"><pre><p><code class="examplecode"><span>&lt;a href</span><span class="coloredlink">="youtube.com"</span>this is a link<span>&lt;/a&gt;</span></code></p></pre></div>
+
+<p>The link's destination is specified in the <span><code>href</span></code> attribute.</p>
+<p>Attributes are used to provide additional information about HTML elements.</p>
+<p>You will learn more about attributes in a later chapter.</p>
+
+<header>HTML Images</header>
+
+<p>HTML images are defined with the<code><span> &lt;img&gt;</span></code> tag</p>
+
+<p>The source file (<span><code>src</code></span>), alternative text (<span><code>alt</code></span>), <span><code>width</code></span>, and <span><code>height</code></span> are provided as attributes:</p>
+
+<h2>Examples</h2>
+
+<div class="div5"><pre><p><code class="examplecode"><span>&lt;img src</span><span class="coloredlink">="youtube.jpg"</span><span> alt</span><span class="coloredlink">="youtube.com"</span><span> width</span><span class="coloredlink">="104"</span><span> height</span><span class="coloredlink">=142</span><span>&gt;</span></code></p></pre></div>
+
+<header>How to View HTML Source?</header>
+
+<p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+
+<h2>View HTML Source Code:</h2>
+
+<p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.</p>
+
+<h2>Inspect an HTML Element:</h2>
+
+<p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+
+</article>
+
+</section>
+<section id="HTML_Elements" class="main-section">
+  
+  <header>HTML Elements</header>
+  
+  <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+
+<article>
+  
+  <p class="codebig"><span><code class="codebig">&lt;tagname&gt;</span></code><b>Content goes here...</b><span><code class="codebig">/&lt;tagname&gt;</code></span></p>
+  <p>The HTML <b>element</b> is everything from the start tag to the end tag:</p>
+  
+  <p class="codebig"><span><code class="codebig">&lt;h1&gt;</code></span>My First Heading<span><code class="codebig">&lt;/h1&gt;</code></span></p>
+  
+  <p class="codebig"><span><code class="codebig">  &lt;p&gt;</code></span>My first paragraph.<span><code class="codebig">&lt;p&gt;</code></span></p>
+  
+  
+  <table id="t01">
+  <tr>
+    <th>Start tag</th>
+    <th>Element content</th> 
+    <th>End tag</th>
+  </tr>
+  <tr class="tablebackground">
+    <td><code>&lt;h1&gt;</code></td>
+    <td>My First Heading</td>
+    <td><code>&lt;/h1&gt;</code></td>
+  </tr>
+  <tr>
+    <td><code>&lt;p&gt;</code></td>
+    <td>My first paragraph.</td>
+    <td><code>&lt;/p&gt;</code></td>
+  </tr>
+  <tr class="tablebackground">
+    <td><code>&lt;br&gt;</code></td>
+    <td>none</td>
+    <td><code>&lt;/br&gt;</code></td>
+    </tr>
+</table>
+  </div3>
+  
+  <p class="notes"><b>Note: </b>Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). these elements are called empty elements. Empty elements do not have an end tag!</p>
+  
+  
+  <header>Nested HTML Elements</header>
+  
+  <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+  
+  <p>All HTML documents consist of nested HTML elements.</p>
+  
+  <p>The following example contains four HTML elements ( <span><code>&lt;html&gt;</code></span>, <span><code>&lt;body&gt;</code></span>, <span><code>&lt;h1&gt;</code></span> and <span><code>&lt;p&gt;</code></span>):
+    
+    
+  <h2>Example</h2>
+  
+  <p><div><pre><code class="examplecode"><span>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;</span>My First Heading<span>&lt;/h1&gt;</span>
+<span>&lt;p&gt;</span>My first paragraph<span>&lt;/p&gt;</span>
+
+<span>&lt;/body&gt;
+&lt;/html&gt;</span>
+        </pre></code></p>
+</div>  
+
+<h2>Example Explained</h2>
+
+
+<p>The<span><code> &lt;html&gt; </code></span>element is the root element and it defines the whole HTML document.</p>
+
+<p>It has a start tag <span><code> &lt;html&gt; </code></span> and an end tag <span><code> &lt;/html&gt; </code></span>.</p>
+
+<p>Then, inside the <span><code> &lt;html&gt; </code></span> element there is a <span><code> &lt;body&gt; </code></span> element:
+  
+  <p><div><pre><code class="examplecode"><span>
+&lt;body&gt;
+
+&lt;h1&gt;</span>My First Heading<span>&lt;/h1&gt;</span>
+<span>&lt;p&gt;</span>My first paragraph<span>&lt;/p&gt;</span>
+
+<span>&lt;/body&gt;
+</span>
+        </pre></code></p>
+</div>  
+
+<p>The <span><code> &lt;body&gt; </code></span> element defines the document's body.</p>
+
+<p>It has a start tag <span><code> &lt;body&gt; </code></span> and an end tag <span><code> &lt;/body&gt; </code></span>.
+  
+<p>Then, inside the <span><code> &lt;body&gt; </code></span> element there are two other elements: <span><code> &lt;h1&gt; </code></span> and <span><code> &lt;p&gt; </code></span>: 
+  
+  <p><div><pre><code class="examplecode"><span>
+  &lt;h1&gt;</span>My First Heading<span>&lt;/h1&gt;</span>
+<span>  &lt;p&gt;</span>My first paragraph<span>&lt;/p&gt;</span>
+</pre></code></p>
+</div>  
+
+<p> The <span><code> &lt;h1&gt; </code></span> element defines a heading.</p>
+
+<p>It has a start tag <span><code> &lt;h1&gt; </code></span> and an end tag <span><code> &lt;/h1&gt; </code></span>:
+  
+ <p><div><pre><code class="examplecode"><span>&lt;p&gt;</span>My first paragraph.<span>&lt;p&gt;</span></code></pre></p>
+</div>
+
+
+<header>Never Skip the End Tag</header>
+
+<p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+
+<h2>Example</h2>
+
+<p><div><pre><code class="examplecode"><span>&lt;html&gt;
+  &lt;body&gt;</span>
+  
+  <span>&lt;p&gt;</span>This is a paragraph 
+  <span>&lt;p&gt;</span>This is a paragraph 
+  
+  <span>&lt;/body&gt;
+  &lt;/html&gt;</span>
+  </code></pre></div></p>
+
+<p><b>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</b></p>
+
+<header>Empty HTML Elements</header>
+
+<p>HTML elements with no content are called empty elements.</p>
+
+<p>The<span><code> &lt;br&gt; </code></span>tag defines a line break, and is an empty element without a closing tag:</p>
+  
+<h2>Example</h2>
+
+<p><div class="div4"><pre><code class="examplecode"><span> &lt;p&gt; </span>This is a<span> &lt;br&gt; </span>paragraph with a line break.<span>&lt;/p&gt;</span>
+</code></pre></div></p>
+
+
+<header>HTML is Not Case Sensitive</header>
+
+<p>HTML tags are not case sensitive:<span><code>&lt;P&gt;</code></span> means the same as <span><code>&lt;p&gt;</code></span>.</p>
+
+<p>
+  </article>
+
+</section>
+
+<section id="HTML_Attributes" class="main-section">
+  
+  <header>HTML Attributes</header>
+  <p>HTML attributes provide additional information about HTML elements.</p>
+  
+  <article>
+    
+   <ul>
+     <li>All HTML elements can have<b> attributes</b></li>
+     <li>Attributes provide<b> additional information</b> about elements</li>
+     <li>Attributes are always specified in<b> the start tag</b></li>
+     <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+    </ul>
+    
+    <header>The href Attribute</header>
+    
+    <p>The <span><code>&lt;a&gt; </code></span>tag defines a hyperlink. The <span><code>href </code></span>attribute specifies the URL of the page the link goes to:</p>
+    
+    <h2>Example</h2>
+    
+    <p><div class="div4"><pre><code class="examplecode"><span>&lt;a href</span><span class="coloredlink">="https://www.youtube.com"&gt;Visit youtube</span><span>&lt;/a&gt;</span></code></pre>
+      
+</div>
+</p>
+  
+  <header>The src Attribute</header>
+  
+  <p>The <span><code>&lt;img&gt; </code></span>ttag is used to embed an image in an HTML page. The <span><code>src </code></span>attribute specifies the path to the image to be displayed:</p>
+  
+  <h2>Example</h2>
+  
+  <p><div><pre><code class="examplecode"><span>&lt;img src</span><span class="coloredlink">="youtube_red.jpg"&gt;</span></code></pre>
+  </div>
+  </p>
+  
+  <p>There are two ways to specify the URL in the<span><code> src </code></span> attribute:</p>
+  
+  <p><b>1. Absolute URL -</b> Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</p>
+
+<p><b>Notes:</b> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+
+<p><b>2. Relative URL</b> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+
+<p><b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+
+<header>The width and height Attributes</header>
+
+<p>The<span><code>&lt;img&gt;</code></span> tag should also contain the<span><code>width</code></span>and <span><code>height</code></span>attributes, which specifies the width and height of the image (in pixels):</p>
+
+<h2>Example</h2>
+
+
+<div class="div4"><pre><p><code class="examplecode"><span>&lt;img </span><span class="coloredlink">="img_youtube.jpg"</span><span> width</span><span class="coloredlink">="104"</span><span> height</span><span class="coloredlink">=142</span><span>&gt;</span></code></p></pre></div>
+
+
+<header>The alt Attribute</header>
+
+
+<p>The required <span><code>alt</code></span>attribute for the <span><code>&lt;img&gt;</code></span>tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the<span><code>src</code></span> attribute, or if the user uses a screen reader.
+  
+<h2>Example</h2>
+
+
+<div class="div4"><pre><p><code class="examplecode"><span>&lt;img </span><span class="coloredlink">="img_youtube.jpg"</span><span> alt</span><span class="coloredlink">="Girl with a jacket"&gt;</span></code>
+  
+</p></pre></div>
+
+
+<header>The style Attribute</header>
+
+<p>The<span><code> Style </code></span>attribute is used to add styles to an element, such as color, font, size, and more.</p>
+
+
+<h2>Example</h2>
+
+<p><div class="div4"><pre><p><code class="examplecode"><span>&lt;p style</span><span class="coloredlink">="color:red;"</span><span>&gt;</span>This is a red paragraph.<span>&lt;/p&gt;</span>
+
+</code></pre></div></p>
+
+
+<header>The lang Attribute</header>
+
+<p>You should always include the<span><code>lang</code></span>attribute inside the <span><code>&lt;html&gt;</code>tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+  
+<p>The following example specifies English as the language:</p>
+
+<h2>Example</h2>
+
+
+<p><div><pre><code class="examplecode"><span>&lt;!DOCTYPE html&gt;</span>
+  &lt;html lang<span class=coloredlink>="en"</span><span>&gt;</span>
+  
+  <span>&lt;body&gt;</span> 
+  
+  example example
+ 
+  example example
+  
+  <span>&lt;body&gt;</span>
+  
+  <span>&lt;/html&gt;</span>
+  </code></pre></div></p>
+
+<p>Country codes can also be added to the language code in the<span><code>lang</code></span>attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+
+<p>The following example specifies English as the language and United States as the country:</p>
+
+
+<h2>Example</h2>
+
+<p><div><pre><code class="examplecode"><span>&lt;!DOCTYPE html&gt;</span>
+  &lt;html lang<span class=coloredlink>="en-US"</span><span>&gt;</span>
+  
+  <span>&lt;body&gt;</span> 
+  
+  example example
+ 
+  example example
+  
+  <span>&lt;body&gt;</span>
+  
+  <span>&lt;/html&gt;</span>
+  </code></pre></div></p>
+
+
+<header>The title Attribute</header>
+
+<p>The<span><code>title</code></span> attribute defines some extra information about an element.</p>
+
+<p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+
+<h2>Example</h2>
+
+<p><div class="div4"><pre><code class="examplecode"><span>&lt;p title</span><span class="coloredlink">="I'm a tooltip"</span><span>&gt;</span>This is a paragraph.<span>&lt;/p&gt;</span>
+</code>
+  
+</pre></div></p>
+
+
+<header>It is Suggested: Always Use Lowercase Attributes</header>
+
+<p>The HTML standard does not require lowercase attribute names.</p>
+
+<p>The title attribute (and all other attributes) can be written with uppercase or lowercase like <b>title</b> or <b>TITLE</b>.</p>
+
+<p>However, we <b>recommend</b> lowercase attributes in HTML, and <b>demand</b> lowercase attributes for stricter document types like XHTML.</p>
+
+
+<header>It is Suggested: Always Quote Attribute Values</header>
+
+<p>The HTML standard does not require quotes around attribute values.</p>
+
+<p>However, we <b>recommend</b> quotes in HTML, and <b>demand</b> quotes for stricter document types like XHTML.</p>
+
+
+<h2>Good:</h2>
+
+ <p><div class="div4"><pre><code class="examplecode"><span>&lt;a href</span><span class="coloredlink">="https://www.youtube.com"&gt;Visit youtube</span><span>&lt;/a&gt;</span></code></pre></p>
+</div>
+   
+   <h2>Bad:</h2>
+
+<p><div class="div4"><pre><code class="examplecode"><span>&lt;a href</span><span class="coloredlink">=https://www.youtube.com&gt;Visit youtube</span><span>&lt;/a&gt;</span></code></pre></p>
+</div>
+
+<p>Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space</p>
+
+<h2>Example</h2>
+
+<p><div><pre><code class="examplecode"><span>&lt;p title</span><span class="coloredlink">=About <span>Youtube</span><span>&gt;</span></code></pre></p>
+</div>
+
+<header>Single or Double Quotes?</header>
+
+<p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+
+<p><div class="div2"><pre><code class="examplecode"><span>&lt;p title</span><span class="coloredlink">='John "ShotGun" Nelson'<span>&gt;</span></code></pre></p>
+</div>
+
+<p>Or vice versa:</p>
+
+<p><div class="div2"><pre><code class="examplecode"><span>&lt;p title</span><span class="coloredlink">="John 'ShotGun' Nelson"<span>&gt;</span></code></pre></p>
+</div>
+
+</article>
+</section>
+<section id="Reference" class="main-section">
+  
+  <header>Reference</header>
+  
+  <ul>
+    <li>All the documentation in this page is taken from <a
+            href="https://www.w3schools.com/html"
+            target="_blank"
+            >W3schools</a>
+    </li>
+  </ul>
+  </article>
+</section>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
